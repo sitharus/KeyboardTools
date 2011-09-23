@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		6B0BD96F0EFA22D20057D554 /* MacroSelectorBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BD96D0EFA22D20057D554 /* MacroSelectorBackgroundView.m */; };
+		6B2209D00EECF71500D34EF3 /* LCDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2209CF0EECF71500D34EF3 /* LCDManager.m */; };
+		6B5152200ECA2CD100F1C5DC /* KeyCapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51521F0ECA2CD100F1C5DC /* KeyCapView.m */; };
+		6B60B1320EBED0E500F100E8 /* KeypressAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B60B1310EBED0E500F100E8 /* KeypressAction.m */; };
+		6B60B1370EBED19F00F100E8 /* KeypressAction.bundle in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 6B60B12B0EBED05F00F100E8 /* KeypressAction.bundle */; };
+		6B60B17E0EBED61000F100E8 /* KeypressActionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B60B17D0EBED61000F100E8 /* KeypressActionProvider.m */; };
+		6B65F6710EC81C0A005595CF /* MacroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B65F6700EC81C0A005595CF /* MacroView.xib */; };
+		6B65F6760EC81DAC005595CF /* MacroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65F6750EC81DAC005595CF /* MacroController.m */; };
+		6B65F6DC0EC82187005595CF /* NullActionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65F6DB0EC82187005595CF /* NullActionProvider.m */; };
+		6B65F7060EC822A6005595CF /* MacroListBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65F7050EC822A6005595CF /* MacroListBackgroundView.m */; };
+		6B875E890ECD3B660044893C /* G15Key.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B875E880ECD3B660044893C /* G15Key.m */; };
+		6B875ED80ECD40C20044893C /* KeyCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B875ED70ECD40C20044893C /* KeyCollectionView.m */; };
+		6B951AA30EC0393800DEACF1 /* MacroSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B951A9E0EC0393800DEACF1 /* MacroSet.m */; };
+		6B951AA40EC0393800DEACF1 /* Macro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B951AA00EC0393800DEACF1 /* Macro.m */; };
+		6B951AA50EC0393800DEACF1 /* MacroGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B951AA20EC0393800DEACF1 /* MacroGroup.m */; };
+		6BA600660EC0060900741AA2 /* MainSplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA600650EC0060900741AA2 /* MainSplitViewDelegate.m */; };
+		6BA6006B0EC0087900741AA2 /* GradientBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA6006A0EC0087900741AA2 /* GradientBottomBar.m */; };
+		6BA938620EFC504900DD2FD8 /* MacroApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA938610EFC504900DD2FD8 /* MacroApplication.m */; };
+		6BA938FD0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA938FC0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.m */; };
+		6BC0945D0ECAB0C5006FA42E /* MacroListStripeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0945C0ECAB0C5006FA42E /* MacroListStripeView.m */; };
+		6BC39ACD0EB99DEB006830E5 /* g15helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC39ACB0EB99D72006830E5 /* g15helper.m */; };
+		6BC39ACF0EB99E09006830E5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEE995F0EB827CC00B29859 /* IOKit.framework */; };
+		6BC39B7F0EB99E11006830E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		6BCD8E140EC8097400FEF197 /* NullAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD8E130EC8097400FEF197 /* NullAction.m */; };
+		6BDF96870EFFA11D003D4F0F /* KeyboardLcd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF96860EFFA11D003D4F0F /* KeyboardLcd.m */; };
+		6BE78F110EBAEFD700AF8C99 /* ToolsKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE78F100EBAEFD700AF8C99 /* ToolsKeyCombo.m */; };
+		6BEE995A0EB823E500B29859 /* ToolsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE99590EB823E500B29859 /* ToolsAppDelegate.m */; };
+		6BEE99600EB827CC00B29859 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEE995F0EB827CC00B29859 /* IOKit.framework */; };
+		6BEF78AC0EBC1D6200BC065A /* visitor1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BEF78AB0EBC1D6200BC065A /* visitor1.ttf */; };
+		6BEFB2490EC01E5400B0183E /* KeyboardTools.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFB2480EC01E5400B0183E /* KeyboardTools.xcdatamodel */; };
+		6BEFB2650EC026DB00B0183E /* MacroTreeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEFB2640EC026DB00B0183E /* MacroTreeManager.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B60B1330EBED17E00F100E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B60B12A0EBED05F00F100E8;
+			remoteInfo = KeypressAction;
+		};
+		6BC39C140EB9AC96006830E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC39ABD0EB99D43006830E5;
+			remoteInfo = g15helper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B1CB2490EC921A700B21B29 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B1CB2EB0EC94A5200B21B29 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B60B1380EBED1BD00F100E8 /* Copy PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6B60B1370EBED19F00F100E8 /* KeypressAction.bundle in Copy PlugIns */,
+			);
+			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC39CE30EB9B60B006830E5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* G15 Tools_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "G15 Tools_Prefix.pch"; sourceTree = "<group>"; };
+		6B0BD96D0EFA22D20057D554 /* MacroSelectorBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroSelectorBackgroundView.m; sourceTree = "<group>"; };
+		6B0BD96E0EFA22D20057D554 /* MacroSelectorBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroSelectorBackgroundView.h; sourceTree = "<group>"; };
+		6B2209CE0EECF71500D34EF3 /* LCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDManager.h; sourceTree = "<group>"; };
+		6B2209CF0EECF71500D34EF3 /* LCDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDManager.m; sourceTree = "<group>"; };
+		6B4A01640F10451200218772 /* KeyboardLcdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardLcdManager.h; sourceTree = "<group>"; };
+		6B51521E0ECA2CD100F1C5DC /* KeyCapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCapView.h; sourceTree = "<group>"; };
+		6B51521F0ECA2CD100F1C5DC /* KeyCapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCapView.m; sourceTree = "<group>"; };
+		6B60B1170EBEC98600F100E8 /* KeyboardAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAction.h; sourceTree = "<group>"; };
+		6B60B12B0EBED05F00F100E8 /* KeypressAction.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeypressAction.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B60B12C0EBED05F00F100E8 /* KeypressAction-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeypressAction-Info.plist"; sourceTree = "<group>"; };
+		6B60B1300EBED0E500F100E8 /* KeypressAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypressAction.h; sourceTree = "<group>"; };
+		6B60B1310EBED0E500F100E8 /* KeypressAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypressAction.m; sourceTree = "<group>"; };
+		6B60B17A0EBED59A00F100E8 /* KeyboardActionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardActionProvider.h; sourceTree = "<group>"; };
+		6B60B17C0EBED61000F100E8 /* KeypressActionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeypressActionProvider.h; sourceTree = "<group>"; };
+		6B60B17D0EBED61000F100E8 /* KeypressActionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeypressActionProvider.m; sourceTree = "<group>"; };
+		6B65F6700EC81C0A005595CF /* MacroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacroView.xib; sourceTree = "<group>"; };
+		6B65F6740EC81DAC005595CF /* MacroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroController.h; sourceTree = "<group>"; };
+		6B65F6750EC81DAC005595CF /* MacroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroController.m; sourceTree = "<group>"; };
+		6B65F6DA0EC82187005595CF /* NullActionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullActionProvider.h; sourceTree = "<group>"; };
+		6B65F6DB0EC82187005595CF /* NullActionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullActionProvider.m; sourceTree = "<group>"; };
+		6B65F7040EC822A6005595CF /* MacroListBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroListBackgroundView.h; sourceTree = "<group>"; };
+		6B65F7050EC822A6005595CF /* MacroListBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroListBackgroundView.m; sourceTree = "<group>"; };
+		6B875E870ECD3B660044893C /* G15Key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G15Key.h; sourceTree = "<group>"; };
+		6B875E880ECD3B660044893C /* G15Key.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G15Key.m; sourceTree = "<group>"; };
+		6B875ED60ECD40C20044893C /* KeyCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCollectionView.h; sourceTree = "<group>"; };
+		6B875ED70ECD40C20044893C /* KeyCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCollectionView.m; sourceTree = "<group>"; };
+		6B951A9D0EC0393800DEACF1 /* MacroSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroSet.h; sourceTree = "<group>"; };
+		6B951A9E0EC0393800DEACF1 /* MacroSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroSet.m; sourceTree = "<group>"; };
+		6B951A9F0EC0393800DEACF1 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		6B951AA00EC0393800DEACF1 /* Macro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Macro.m; sourceTree = "<group>"; };
+		6B951AA10EC0393800DEACF1 /* MacroGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroGroup.h; sourceTree = "<group>"; };
+		6B951AA20EC0393800DEACF1 /* MacroGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroGroup.m; sourceTree = "<group>"; };
+		6BA600640EC0060900741AA2 /* MainSplitViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainSplitViewDelegate.h; sourceTree = "<group>"; };
+		6BA600650EC0060900741AA2 /* MainSplitViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainSplitViewDelegate.m; sourceTree = "<group>"; };
+		6BA600690EC0087900741AA2 /* GradientBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientBottomBar.h; sourceTree = "<group>"; };
+		6BA6006A0EC0087900741AA2 /* GradientBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBottomBar.m; sourceTree = "<group>"; };
+		6BA938600EFC504900DD2FD8 /* MacroApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroApplication.h; sourceTree = "<group>"; };
+		6BA938610EFC504900DD2FD8 /* MacroApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroApplication.m; sourceTree = "<group>"; };
+		6BA938FB0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierToIconValueTransformer.h; sourceTree = "<group>"; };
+		6BA938FC0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifierToIconValueTransformer.m; sourceTree = "<group>"; };
+		6BAA35A20EECFB970066DC48 /* LCDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDManager.h; sourceTree = "<group>"; };
+		6BC0945B0ECAB0C5006FA42E /* MacroListStripeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroListStripeView.h; sourceTree = "<group>"; };
+		6BC0945C0ECAB0C5006FA42E /* MacroListStripeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroListStripeView.m; sourceTree = "<group>"; };
+		6BC39ABE0EB99D43006830E5 /* g15helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g15helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC39ACA0EB99D72006830E5 /* g15helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = g15helper.h; path = Helper/g15helper.h; sourceTree = "<group>"; };
+		6BC39ACB0EB99D72006830E5 /* g15helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = g15helper.m; path = Helper/g15helper.m; sourceTree = "<group>"; };
+		6BC39B920EB9A4E1006830E5 /* KeyboardToolsDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardToolsDefines.h; sourceTree = "<group>"; };
+		6BC39BD40EB9A6D7006830E5 /* KeyboardHelperProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHelperProtocol.h; sourceTree = "<group>"; };
+		6BC39C370EB9AE03006830E5 /* KeyboardClientProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardClientProtocol.h; sourceTree = "<group>"; };
+		6BCD8E120EC8097400FEF197 /* NullAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullAction.h; sourceTree = "<group>"; };
+		6BCD8E130EC8097400FEF197 /* NullAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullAction.m; sourceTree = "<group>"; };
+		6BDF96850EFFA11D003D4F0F /* KeyboardLcd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardLcd.h; sourceTree = "<group>"; };
+		6BDF96860EFFA11D003D4F0F /* KeyboardLcd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardLcd.m; sourceTree = "<group>"; };
+		6BDF96990EFFA60C003D4F0F /* KeyboardLcdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardLcdDelegate.h; sourceTree = "<group>"; };
+		6BE78F0F0EBAEFD700AF8C99 /* ToolsKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsKeyCombo.h; sourceTree = "<group>"; };
+		6BE78F100EBAEFD700AF8C99 /* ToolsKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsKeyCombo.m; sourceTree = "<group>"; };
+		6BEE99580EB823E500B29859 /* ToolsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsAppDelegate.h; sourceTree = "<group>"; };
+		6BEE99590EB823E500B29859 /* ToolsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsAppDelegate.m; sourceTree = "<group>"; };
+		6BEE995F0EB827CC00B29859 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		6BEF78AB0EBC1D6200BC065A /* visitor1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = visitor1.ttf; sourceTree = "<group>"; };
+		6BEFB2480EC01E5400B0183E /* KeyboardTools.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = KeyboardTools.xcdatamodel; sourceTree = "<group>"; };
+		6BEFB2630EC026DB00B0183E /* MacroTreeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroTreeManager.h; sourceTree = "<group>"; };
+		6BEFB2640EC026DB00B0183E /* MacroTreeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacroTreeManager.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* G15 Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "G15 Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B60B1290EBED05F00F100E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC39ABC0EB99D43006830E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC39B7F0EB99E11006830E5 /* Cocoa.framework in Frameworks */,
+				6BC39ACF0EB99E09006830E5 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				6BEE99600EB827CC00B29859 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE99580EB823E500B29859 /* ToolsAppDelegate.h */,
+				6BEE99590EB823E500B29859 /* ToolsAppDelegate.m */,
+				6BE78F0F0EBAEFD700AF8C99 /* ToolsKeyCombo.h */,
+				6BE78F100EBAEFD700AF8C99 /* ToolsKeyCombo.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				6BEE995F0EB827CC00B29859 /* IOKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* G15 Tools.app */,
+				6BC39ABE0EB99D43006830E5 /* g15helper */,
+				6B60B12B0EBED05F00F100E8 /* KeypressAction.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* G15 Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6B2209CD0EECF71500D34EF3 /* LCD */,
+				6BA600630EC0052600741AA2 /* GUI */,
+				6B60B1250EBED01F00F100E8 /* Keypress Plugin */,
+				6BC39AC80EB99D57006830E5 /* G15Helper */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				6B60B12C0EBED05F00F100E8 /* KeypressAction-Info.plist */,
+			);
+			name = "G15 Tools";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* G15 Tools_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				6BC39B920EB9A4E1006830E5 /* KeyboardToolsDefines.h */,
+				6BC39BD40EB9A6D7006830E5 /* KeyboardHelperProtocol.h */,
+				6BC39C370EB9AE03006830E5 /* KeyboardClientProtocol.h */,
+				6B60B1170EBEC98600F100E8 /* KeyboardAction.h */,
+				6B60B17A0EBED59A00F100E8 /* KeyboardActionProvider.h */,
+				6B875E870ECD3B660044893C /* G15Key.h */,
+				6B875E880ECD3B660044893C /* G15Key.m */,
+				6BAA35A20EECFB970066DC48 /* LCDManager.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BEF78AB0EBC1D6200BC065A /* visitor1.ttf */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				6B65F6700EC81C0A005595CF /* MacroView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B2209CD0EECF71500D34EF3 /* LCD */ = {
+			isa = PBXGroup;
+			children = (
+				6B2209CE0EECF71500D34EF3 /* LCDManager.h */,
+				6B2209CF0EECF71500D34EF3 /* LCDManager.m */,
+				6BDF96850EFFA11D003D4F0F /* KeyboardLcd.h */,
+				6BDF96860EFFA11D003D4F0F /* KeyboardLcd.m */,
+				6BDF96990EFFA60C003D4F0F /* KeyboardLcdDelegate.h */,
+				6B4A01640F10451200218772 /* KeyboardLcdManager.h */,
+			);
+			path = LCD;
+			sourceTree = "<group>";
+		};
+		6B60B1250EBED01F00F100E8 /* Keypress Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				6B60B1300EBED0E500F100E8 /* KeypressAction.h */,
+				6B60B1310EBED0E500F100E8 /* KeypressAction.m */,
+				6B60B17C0EBED61000F100E8 /* KeypressActionProvider.h */,
+				6B60B17D0EBED61000F100E8 /* KeypressActionProvider.m */,
+			);
+			path = "Keypress Plugin";
+			sourceTree = "<group>";
+		};
+		6B65F7030EC8228F005595CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B0BD96D0EFA22D20057D554 /* MacroSelectorBackgroundView.m */,
+				6B0BD96E0EFA22D20057D554 /* MacroSelectorBackgroundView.h */,
+				6BA600690EC0087900741AA2 /* GradientBottomBar.h */,
+				6BA6006A0EC0087900741AA2 /* GradientBottomBar.m */,
+				6B65F7040EC822A6005595CF /* MacroListBackgroundView.h */,
+				6B65F7050EC822A6005595CF /* MacroListBackgroundView.m */,
+				6B51521E0ECA2CD100F1C5DC /* KeyCapView.h */,
+				6B51521F0ECA2CD100F1C5DC /* KeyCapView.m */,
+				6BC0945B0ECAB0C5006FA42E /* MacroListStripeView.h */,
+				6BC0945C0ECAB0C5006FA42E /* MacroListStripeView.m */,
+				6B875ED60ECD40C20044893C /* KeyCollectionView.h */,
+				6B875ED70ECD40C20044893C /* KeyCollectionView.m */,
+				6BA938FB0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.h */,
+				6BA938FC0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6BA600630EC0052600741AA2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				6B65F7030EC8228F005595CF /* Views */,
+				6BEFB2000EC01B3E00B0183E /* Model */,
+				6BEFB1FF0EC01B3500B0183E /* Controllers */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				6BA600640EC0060900741AA2 /* MainSplitViewDelegate.h */,
+				6BA600650EC0060900741AA2 /* MainSplitViewDelegate.m */,
+				6BCD8E120EC8097400FEF197 /* NullAction.h */,
+				6BCD8E130EC8097400FEF197 /* NullAction.m */,
+				6B65F6DA0EC82187005595CF /* NullActionProvider.h */,
+				6B65F6DB0EC82187005595CF /* NullActionProvider.m */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		6BC39AC80EB99D57006830E5 /* G15Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6BC39ACA0EB99D72006830E5 /* g15helper.h */,
+				6BC39ACB0EB99D72006830E5 /* g15helper.m */,
+			);
+			name = G15Helper;
+			sourceTree = "<group>";
+		};
+		6BEFB1FF0EC01B3500B0183E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B65F6740EC81DAC005595CF /* MacroController.h */,
+				6B65F6750EC81DAC005595CF /* MacroController.m */,
+				6BEFB2630EC026DB00B0183E /* MacroTreeManager.h */,
+				6BEFB2640EC026DB00B0183E /* MacroTreeManager.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6BEFB2000EC01B3E00B0183E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B951A9D0EC0393800DEACF1 /* MacroSet.h */,
+				6B951A9E0EC0393800DEACF1 /* MacroSet.m */,
+				6B951A9F0EC0393800DEACF1 /* Macro.h */,
+				6B951AA00EC0393800DEACF1 /* Macro.m */,
+				6B951AA10EC0393800DEACF1 /* MacroGroup.h */,
+				6B951AA20EC0393800DEACF1 /* MacroGroup.m */,
+				6BEFB2480EC01E5400B0183E /* KeyboardTools.xcdatamodel */,
+				6BA938600EFC504900DD2FD8 /* MacroApplication.h */,
+				6BA938610EFC504900DD2FD8 /* MacroApplication.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B60B12A0EBED05F00F100E8 /* KeypressAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B60B12F0EBED06000F100E8 /* Build configuration list for PBXNativeTarget "KeypressAction" */;
+			buildPhases = (
+				6B60B1270EBED05F00F100E8 /* Resources */,
+				6B60B1280EBED05F00F100E8 /* Sources */,
+				6B60B1290EBED05F00F100E8 /* Frameworks */,
+				6B1CB2490EC921A700B21B29 /* CopyFiles */,
+				6B1CB2EB0EC94A5200B21B29 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeypressAction;
+			productName = KeypressAction;
+			productReference = 6B60B12B0EBED05F00F100E8 /* KeypressAction.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6BC39ABD0EB99D43006830E5 /* keyboardMacroHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BC39AC90EB99D57006830E5 /* Build configuration list for PBXNativeTarget "keyboardMacroHelper" */;
+			buildPhases = (
+				6BC39ABB0EB99D43006830E5 /* Sources */,
+				6BC39ABC0EB99D43006830E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keyboardMacroHelper;
+			productName = g15helper;
+			productReference = 6BC39ABE0EB99D43006830E5 /* g15helper */;
+			productType = "com.apple.product-type.tool";
+		};
+		8D1107260486CEB800E47090 /* G15 Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "G15 Tools" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				6BC39CE30EB9B60B006830E5 /* Copy Frameworks */,
+				6B60B1380EBED1BD00F100E8 /* Copy PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BC39C150EB9AC96006830E5 /* PBXTargetDependency */,
+				6B60B1340EBED17E00F100E8 /* PBXTargetDependency */,
+			);
+			name = "G15 Tools";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "G15 Tools";
+			productReference = 8D1107320486CEB800E47090 /* G15 Tools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KeyboardTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Dutch,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* G15 Tools */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* G15 Tools */,
+				6BC39ABD0EB99D43006830E5 /* keyboardMacroHelper */,
+				6B60B12A0EBED05F00F100E8 /* KeypressAction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B60B1270EBED05F00F100E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				6BEF78AC0EBC1D6200BC065A /* visitor1.ttf in Resources */,
+				6B65F6710EC81C0A005595CF /* MacroView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B60B1280EBED05F00F100E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B60B1320EBED0E500F100E8 /* KeypressAction.m in Sources */,
+				6B60B17E0EBED61000F100E8 /* KeypressActionProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BC39ABB0EB99D43006830E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BC39ACD0EB99DEB006830E5 /* g15helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				6BEE995A0EB823E500B29859 /* ToolsAppDelegate.m in Sources */,
+				6BE78F110EBAEFD700AF8C99 /* ToolsKeyCombo.m in Sources */,
+				6BA600660EC0060900741AA2 /* MainSplitViewDelegate.m in Sources */,
+				6BA6006B0EC0087900741AA2 /* GradientBottomBar.m in Sources */,
+				6BEFB2490EC01E5400B0183E /* KeyboardTools.xcdatamodel in Sources */,
+				6BEFB2650EC026DB00B0183E /* MacroTreeManager.m in Sources */,
+				6B951AA30EC0393800DEACF1 /* MacroSet.m in Sources */,
+				6B951AA40EC0393800DEACF1 /* Macro.m in Sources */,
+				6B951AA50EC0393800DEACF1 /* MacroGroup.m in Sources */,
+				6BCD8E140EC8097400FEF197 /* NullAction.m in Sources */,
+				6B65F6760EC81DAC005595CF /* MacroController.m in Sources */,
+				6B65F6DC0EC82187005595CF /* NullActionProvider.m in Sources */,
+				6B65F7060EC822A6005595CF /* MacroListBackgroundView.m in Sources */,
+				6B5152200ECA2CD100F1C5DC /* KeyCapView.m in Sources */,
+				6BC0945D0ECAB0C5006FA42E /* MacroListStripeView.m in Sources */,
+				6B875E890ECD3B660044893C /* G15Key.m in Sources */,
+				6B875ED80ECD40C20044893C /* KeyCollectionView.m in Sources */,
+				6B2209D00EECF71500D34EF3 /* LCDManager.m in Sources */,
+				6B0BD96F0EFA22D20057D554 /* MacroSelectorBackgroundView.m in Sources */,
+				6BA938620EFC504900DD2FD8 /* MacroApplication.m in Sources */,
+				6BA938FD0EFC5B2500DD2FD8 /* IdentifierToIconValueTransformer.m in Sources */,
+				6BDF96870EFFA11D003D4F0F /* KeyboardLcd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B60B1340EBED17E00F100E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B60B12A0EBED05F00F100E8 /* KeypressAction */;
+			targetProxy = 6B60B1330EBED17E00F100E8 /* PBXContainerItemProxy */;
+		};
+		6BC39C150EB9AC96006830E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BC39ABD0EB99D43006830E5 /* keyboardMacroHelper */;
+			targetProxy = 6BC39C140EB9AC96006830E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B60B12D0EBED06000F100E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Keypress Plugin\"",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "KeypressAction-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PRODUCT_NAME = KeypressAction;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6B60B12E0EBED06000F100E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Keypress Plugin\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "KeypressAction-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PRODUCT_NAME = KeypressAction;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6BC39AC00EB99D44006830E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = g15helper;
+			};
+			name = Debug;
+		};
+		6BC39AC10EB99D44006830E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = g15helper;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/srleopard-prerelease2/SR Leopard/build/Release\"",
+					"\"$(SRCROOT)/Keypress Plugin\"",
+				);
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G15 Tools_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "G15 Tools";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/srleopard-prerelease2/SR Leopard/build/Release\"",
+					"\"$(SRCROOT)/Keypress Plugin\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "G15 Tools_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "G15 Tools";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B60B12F0EBED06000F100E8 /* Build configuration list for PBXNativeTarget "KeypressAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B60B12D0EBED06000F100E8 /* Debug */,
+				6B60B12E0EBED06000F100E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BC39AC90EB99D57006830E5 /* Build configuration list for PBXNativeTarget "keyboardMacroHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BC39AC00EB99D44006830E5 /* Debug */,
+				6BC39AC10EB99D44006830E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "G15 Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "KeyboardTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
