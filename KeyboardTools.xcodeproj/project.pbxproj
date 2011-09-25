@@ -645,6 +645,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/bin;
 				PRODUCT_NAME = g15helper;
 			};
@@ -657,6 +658,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/bin;
 				PRODUCT_NAME = g15helper;
 			};
@@ -670,6 +672,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/srleopard-prerelease2/SR Leopard/build/Release\"",
 					"\"$(SRCROOT)/Keypress Plugin\"",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.7.sdk/System/Library/Frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -689,6 +692,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/srleopard-prerelease2/SR Leopard/build/Release\"",
 					"\"$(SRCROOT)/Keypress Plugin\"",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.7.sdk/System/Library/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "G15 Tools_Prefix.pch";
