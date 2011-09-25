@@ -7,44 +7,37 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#include <IOKit/IOCFPlugIn.h>
-#include <IOKit/hid/IOHIDKeys.h>
 #include <CoreFoundation/CoreFoundation.h>
-#import <IOKit/usb/IOUSBLib.h>
+#include <IOKit/hid/IOHIDKeys.h>
 #import <IOKit/hid/IOHIDLib.h>
+#include <IOKit/IOCFPlugIn.h>
+#import <IOKit/usb/IOUSBLib.h> 
 #import "KeyboardHelperProtocol.h"
 #import "KeyboardClientProtocol.h"
 #include "KeyboardToolsDefines.h"
 
-#define kG15ReportBufferSize 9
+#define kG15ReportBufferSize 64
 
 @interface g15helper : NSObject <KeyboardHelperProtocol> {
-	UInt32 locationId;
-	
-	io_service_t serviceId;
-	IOUSBDeviceInterface182 **usbDevice;
-	IOUSBInterfaceInterface182 **usbControlInterface;
-	IOHIDDeviceInterface122 **hidDevice;
-	IOHIDQueueInterface **hidQueue;
-	UInt8 interruptEndpoint;
-	UInt8 buffer[kG15ReportBufferSize];
+	uint8_t buffer[kG15ReportBufferSize];
 	
 	CFRunLoopSourceRef eventTapSource;
 	CFMachPortRef eventTapPort;
 	
-	io_iterator_t deviceIterator;
 	IONotificationPortRef notifyPort;
 	
 	NSObject<KeyboardClientProtocol> *delegate;
 	NSConnection *helperConnection;
+    IOHIDManagerRef hidManager;
+    IOHIDDeviceRef currentDevice;
 }
+@property(readwrite, nonatomic) IOHIDManagerRef hidManager;
+@property(readwrite, nonatomic) IOHIDDeviceRef currentDevice;
+
 - (void)setupConnection;
 - (void)connectionDied:(NSNotification *)notification;
-- (void)initHIDInterface;
-- (void)initDeviceInterface;
-- (void)initDeviceControlInterface;
-- (void)processReadData:(UInt32)inBufferSize;
-- (void)deviceConnected:(io_service_t)device;
-- (void)deviceDisconnected:(io_service_t)device;
+- (void)processReport:(uint8_t *)report ofLength:(int)length type:(IOHIDReportType)reportType;
 - (void)monitorDeviceVendor:(long)vendor product:(long)product;
+- (void)registerDevice:(IOHIDDeviceRef) device;
+- (void)unregisterDevice:(IOHIDDeviceRef) device;
 @end
